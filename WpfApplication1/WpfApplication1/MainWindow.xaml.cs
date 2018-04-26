@@ -29,5 +29,11 @@ namespace WpfApplication1
         {
             this.Close();
         }
+
+        private void btm_clearHeight_Click(object sender, RoutedEventArgs e)
+        {
+            txtbox_height.Text = "";
+            txtbox_height.Background = Brushes.Red;
+        }
     }
 }
