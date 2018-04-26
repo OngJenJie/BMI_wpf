@@ -43,13 +43,21 @@ namespace WpfApplication1
 
         private void btn_calculate_Click(object sender, RoutedEventArgs e)
         {
-            double height = int.Parse(txtbox_height.Text);
+            double height = int.Parse(txtbox_height.Text)/100;
             double weight = int.Parse(txtboc_weight.Text);
-
-            double mheight = height / 100;
-            double bmi = weight / (mheight * mheight);
+            double bmi = weight / (height * height);
 
             txtbox_result.Text =bmi.ToString() ;
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("恭喜你！要繼續保持下去哦！");
+        }
+
+        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("這樣不行哦！好好努力減肥吧！");
         }
     }
 }

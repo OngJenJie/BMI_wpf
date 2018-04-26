@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="452.273" Width="525">
+        Title="MainWindow" Height="615.909" Width="525">
     <Grid>
         <StackPanel>
+            
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="10 20 10 10" x:Name="txtBlc_Height">身高: </TextBlock>
                 <TextBox Width="350" Height="30" Margin="20 20 10 10" x:Name="txtbox_height"></TextBox>
@@ -23,8 +24,10 @@
             <Button Background="Lavender" Foreground="Black" FontSize="20" Margin="10 20 10 10" Height="50" x:Name="btn_calculate" Click="btn_calculate_Click">Calculate</Button>
             <TextBlock Margin="10 20 10 10"  Foreground="Red" FontSize="50" TextAlignment="Center" Height="70" x:Name="txtbox_result">0</TextBlock>
             <Label FontSize="14">你有在標準bmi值嗎？</Label>
-            <CheckBox Margin="10 10 10 10">有</CheckBox>
-            <CheckBox Margin="10 10 10 10">沒有</CheckBox>
+            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked">有</CheckBox>
+            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked_1">沒有</CheckBox>
+
+            <Slider Minimum="0" Maximum="200"></Slider>
         </StackPanel>
     </Grid>
 </Window>
