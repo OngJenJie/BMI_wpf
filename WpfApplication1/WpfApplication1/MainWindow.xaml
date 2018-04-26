@@ -17,10 +17,10 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="10 20 10 10" x:Name="txtblc_Weight">Weight: </TextBlock>
                 <TextBox Width="350" Height="30" Margin="20 20 10 10" x:Name="txtboc_weight"></TextBox>
-                <Button Width="55" Height="30" Margin=" 10 20 10 10" x:Name="btn_clearWieght">Clear</Button>
+                <Button Width="55" Height="30" Margin=" 10 20 10 10" x:Name="btn_clearWieght" Click="btn_clearWieght_Click">Clear</Button>
             </StackPanel>
 
-            <Button Background="Lavender" Foreground="Black" FontSize="20" Margin="10 20 10 10" Height="50" x:Name="btn_calculate">Calculate</Button>
+            <Button Background="Lavender" Foreground="Black" FontSize="20" Margin="10 20 10 10" Height="50" x:Name="btn_calculate" Click="btn_calculate_Click">Calculate</Button>
             <TextBlock Margin="10 20 10 10"  Foreground="Red" FontSize="50" TextAlignment="Center" Height="70" x:Name="txtbox_result">0</TextBlock>
         </StackPanel>
     </Grid>

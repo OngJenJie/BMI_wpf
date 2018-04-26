@@ -33,7 +33,24 @@ namespace WpfApplication1
         private void btm_clearHeight_Click(object sender, RoutedEventArgs e)
         {
             txtbox_height.Text = "";
-            txtbox_height.Background = Brushes.Red;
+
+        }
+
+        private void btn_clearWieght_Click(object sender, RoutedEventArgs e)
+        {
+            txtboc_weight.Text = "";
+        }
+
+        private void btn_calculate_Click(object sender, RoutedEventArgs e)
+        {
+            double height = int.Parse(txtbox_height.Text);
+            double weight = int.Parse(txtboc_weight.Text);
+
+            double mheight = height / 100;
+            double hh = mheight * mheight;
+            double bmi = weight / hh;
+
+            txtbox_result.Text =bmi.ToString() ;
         }
     }
 }
