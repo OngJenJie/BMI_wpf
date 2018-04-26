@@ -47,8 +47,7 @@ namespace WpfApplication1
             double weight = int.Parse(txtboc_weight.Text);
 
             double mheight = height / 100;
-            double hh = mheight * mheight;
-            double bmi = weight / hh;
+            double bmi = weight / (mheight * mheight);
 
             txtbox_result.Text =bmi.ToString() ;
         }
