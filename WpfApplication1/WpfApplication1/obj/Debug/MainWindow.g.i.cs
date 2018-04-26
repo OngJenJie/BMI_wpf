@@ -120,6 +120,22 @@ namespace WpfApplication1 {
         #line default
         #line hidden
         
+        
+        #line 31 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.CheckBox check_yes;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 32 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.CheckBox check_no;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -211,17 +227,19 @@ namespace WpfApplication1 {
             this.txtbox_result = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 11:
+            this.check_yes = ((System.Windows.Controls.CheckBox)(target));
             
             #line 31 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.CheckBox)(target)).Checked += new System.Windows.RoutedEventHandler(this.CheckBox_Checked);
+            this.check_yes.Checked += new System.Windows.RoutedEventHandler(this.CheckBox_Checked);
             
             #line default
             #line hidden
             return;
             case 12:
+            this.check_no = ((System.Windows.Controls.CheckBox)(target));
             
             #line 32 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.CheckBox)(target)).Checked += new System.Windows.RoutedEventHandler(this.CheckBox_Checked_1);
+            this.check_no.Checked += new System.Windows.RoutedEventHandler(this.CheckBox_Checked_1);
             
             #line default
             #line hidden

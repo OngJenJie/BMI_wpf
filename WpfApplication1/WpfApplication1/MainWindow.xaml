@@ -28,8 +28,8 @@
             <Button Background="Lavender" Foreground="Black" FontSize="20" Margin="10 20 10 10" Height="50" x:Name="btn_calculate" Click="btn_calculate_Click">計算</Button>
             <TextBlock Margin="10 20 10 10"  Foreground="Red" FontSize="50" TextAlignment="Center" Height="70" x:Name="txtbox_result">0</TextBlock>
             <Label FontSize="14">你有在標準bmi值嗎？</Label>
-            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked">有</CheckBox>
-            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked_1">沒有</CheckBox>
+            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked" x:Name="check_yes">有</CheckBox>
+            <CheckBox Margin="10 10 10 10" Checked="CheckBox_Checked_1" x:Name="check_no">沒有</CheckBox>
 
         </StackPanel>
     </Grid>
