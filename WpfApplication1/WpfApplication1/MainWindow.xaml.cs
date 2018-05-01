@@ -25,11 +25,6 @@ namespace WpfApplication1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void btm_clearHeight_Click(object sender, RoutedEventArgs e)
         {
             txtbox_height.Text = "";

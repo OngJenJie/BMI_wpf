@@ -14,7 +14,7 @@
                 <TextBox Width="350" Height="30" Margin="20 20 10 10" x:Name="txtbox_height" Text="10"></TextBox>
                 <Button Width="55" Height="30" Margin="10 20 10 10" x:Name="btm_clearHeight" Click="btm_clearHeight_Click">清除</Button>
             </StackPanel>
-            <Slider Minimum="0" Maximum="200" ValueChanged="slider_height_ValueChanged" x:Name="slider_height" TickFrequency="1"></Slider>
+            <Slider Minimum="0" Maximum="200" ValueChanged="slider_height_ValueChanged" x:Name="slider_height" TickFrequency="1" ></Slider>
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="10 20 10 10" x:Name="txtblc_Weight">體重: </TextBlock>
